@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/registration-form.css" />
+    <title>Workshop Registration</title>
+  </head>
+  <body>
+    <header>
+        <div class="header-main">
+            <h2>Workshop Registration</h2>
+            <select id="more-action" name="more-action">
+                <option value="More Actions">More Actions</option>
+                <option value="More Actions">Action 2</option>
+                <option value="More Actions">Action 3</option>
+                <option value="More Actions">Action 4</option>
+            </select>
+        </div>
+    </header>
+    <div class="wrapper-content">
+        <div class="content">
+            <div class="left-content">
+                <p><a href="#">Register now While seats are available!</a></p>
+            <form>
+                <div class="input-field">
+                    <label for="fname">First name <span>*</span></label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="input-field">
+                   <label for="lname">Last name <span>*</span></label>
+                   <input type="text" id="lname" name="lname">
+                </div>
+                <div class="input-field">
+                    <label for="company">Company/Institution <span>*</span></label>
+                    <input type="text" id="company" name="company">
+                 </div>
+                 <div class="input-field">
+                    <label for="address">Address <span>*</span></label>
+                    <textarea id="address" name="address" rows="7" cols="29">
+                    </textarea>
+                </div>
+                <div class="input-field">
+                    <label for="city">City </label>
+                    <input type="text" id="city" name="city">
+                 </div>
+                 <div class="input-field">
+                    <label for="state">State/Province/Region </label>
+                    <select id="state" name="state">
+                        <option value="select">Select</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Kansas">Kansas</option>
+                    </select>
+                 </div>
+                 <div class="input-field">
+                    <label for="country">Country </label>
+                    <select id="country" name="country">
+                        <option value="select">Select</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Switzerland">Switzerland</option>
+                    </select>
+                 </div>
+                 <div class="input-field">
+                    <label for="email">email <span>*</span></label>
+                    <input type="text" id="email" name="email">
+                 </div>
+                 <div class="input-field">
+                    <label for="phone">Phone Number <span>*</span></label>
+                    <input type="text" id="phone" name="phone">
+                 </div>
+            </form>
+            </div>
+            <div class="right-content">
+                <p><a href="#">Lunch</a></p>
+                <form>
+                    <div class="input-field">
+                        <label for="meal">Meal Preference </label>
+                        <select id="country" name="country">
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="Meditarian">Meditarian</option>
+                            <option value="Nonveg">Non-veg</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                       <p><a href="#">Payment Details</a></p>
+                       <label for="mode">Payment Mode</label>
+                       <input type="checkbox" id="cash" name="cash">Cash<br>
+                       <input class="space" type="checkbox" id="check" name="check">Check<br>
+                       <input class="space" type="checkbox" id="demand-draft" name="demand-draft">Demand Draft
+                    </div>
+                    <div class="input-field">
+                       <label for="chequeno">DD/ Cheque No.</label>
+                       <input type="text" id="chequeno" name="chequeno">
+                    </div>
+                    <div class="input-field">
+                        <label for="bankname">Drawn On(Bank Name)</label>
+                        <input type="text" id="bankname" name="bankname">
+                     </div>
+                     <div class="input-field">
+                        <label for="payable">Payable at</label>
+                        <input type="text" id="payable" name="payable">
+                     </div>
+                     <div class="input-field">
+                        <div class="button">
+                            <a href="#">Submit</a>
+                            <a href="#">Reset</a>
+                        </div>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://validator.w3.org/nu/?doc=https://tohfanusrat.github.io/wap.github.io/"><img src="images/HTML-checker.png" alt="html validator"/></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="images/css_checker.png" alt="css validator" alt="css validator"/></a>
+              
+    </footer>
+  </body>
+</html>
