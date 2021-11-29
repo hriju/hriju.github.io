@@ -40,7 +40,7 @@ header .menu{
 .menu .logo{
     float: left;
     width: 20%;
-    height: 50px;
+    height: auto;
 }
 .menu ul.right{
     float: right;
