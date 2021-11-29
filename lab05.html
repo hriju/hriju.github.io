@@ -11,7 +11,7 @@ function sum (params){
   var sum=0;
   for(i; i<arr.length;i++){
     if (params[i] >20){
-      var sum =sum+params[i];
+      var sum = sum+params[i];
     }
   }
   alert(sum);
@@ -23,20 +23,19 @@ console.log(sum(arr));
 	<pre>
 Problem 2: 
 <code>
-var str= ["pqrsta", "sdf", "pqr","ajklsdf"];
-let getNewArray = function(params) {
-var i= 0;
-var newarr = [];
-for(i; i<params.length;i++){
-	if(params[i].length >= 5 && params[i].includes('a')){
-          newarr.push(params[i]);
-    }
-   
-	
-}
- return newarr;
-};
-console.log(getNewArray(str));
+let arrStrng = [
+            'alpha',
+            'beta',
+            'gamma',
+            'summit',
+            'dsfdsf',
+            'jsdfsdfds'
+        ];
+
+        let getNewArray = function (arr) {
+            return arr.filter(s => s.length >= 5 && s.toLowerCase().includes('a'));
+        };
+	console.log(getNewArray(arrString));
 </code>
 	</pre>
 	</body>
