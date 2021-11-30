@@ -5,18 +5,11 @@
 Problem 1: 
 <code>
 var arr = [10, 11, 20, 21, 22, 24, 25, 28, 13, 9]
-
 function sum (params){
-  var i=0; 
-  var sum=0;
-  for(i; i < arr.length; i++){
-    if (params[i] >20){
-      var sum = sum+params[i];
-    }
-  }
-  alert(sum);
+let getsum = arr.filter(n => n > 20)
+.reduce((accumulator, current) => accumulator + current);
+return getsum;
 }
-sum(arr);
 console.log(sum(arr));
 	</code>
 	</pre>
