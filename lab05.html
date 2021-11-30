@@ -7,7 +7,7 @@ Problem 1:
 var arr = [10, 11, 20, 21, 22, 24, 25, 28, 13, 9]
 function sum (params){
 let getsum = arr.filter(n => n > 20)
-.reduce((accumulator, current) => accumulator + current);
+.reduce((accumulator, item) => accumulator + item);
 return getsum;
 }
 console.log(sum(arr));
