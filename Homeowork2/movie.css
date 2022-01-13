@@ -19,7 +19,7 @@ h1{
     font-weight: bold;
     text-shadow: 3px 3px #999999;
 }
-.containerDiv{
+.container{
     margin: auto;
     width: 800px;
     border-radius: 20px;
@@ -28,7 +28,7 @@ h1{
     border: 4px solid gray;
 }
 
-.ratingDiv{
+.rating{
     background-image: url("./images/rbg.png");
     
     font-size: 48pt;
@@ -37,11 +37,11 @@ h1{
     height: 83px;
 
 }
-.ratingDiv img{
+.rating img{
     vertical-align: bottom;
 }
 
-.generalOverviewDiv{
+.righttopimage{
     
     width: 250px;
     
@@ -55,7 +55,7 @@ h1{
     
 }
 
-.generalOverviewDiv dt {
+.righttopimage dt {
     
     padding-top: 10pt;
     padding-left: 5pt;
