@@ -4,8 +4,23 @@
       </head>
       <body>
             <h1>Retrieve your grade</h1>
-            <p>Name: ...</p>
-            <p>Student ID: ...</p>
+            <form method="post"action="http://mumstudents.org/params.php">
+
+              <label>Name: </label>  
+              <input type="text" id="name"  name="name" value="John"><br><br>
+              <label>Student ID:<label>
+              <input type="text" id="student_id" value="John"><br><br>
+              <label>Select Assignments</label>
+              <select id="assignments" name="assignments">
+                <option value="1">Lab 1</option>
+                <option value="2">Lab 2</option>
+                <option value="3">Homeowork 1</option>
+                <option value="4">Homeowork 2</option>
+              </select>
+              <button type='submit'>Get Grades</button>
+            </form>
+           
+            
             Get Grade!
       </body>
 </html>
