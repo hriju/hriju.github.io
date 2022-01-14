@@ -1,29 +1,43 @@
 <!DOCTYPE html> <html>
       <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/style.css">
             <title>Retrieve Grade</title>
       </head>
       <body>
+        <div class="wrapper">
             <h1>Retrieve your grade</h1>
+            <hr>
             <form method="post"action="http://mumstudents.org/params.php">
 
               <label>Name: </label>  
-              <input type="text" id="name"  name="name" value="John"><br><br>
-              <label>Student ID:<label>
-              <input type="text" id="student_id" value="John"><br><br>
-              <label>Select Assignments</label>
-              <select id="assignments" name="assignments">
+              <input type="text" id="name"  name="name" placeholder="input name" required><br><br>
+              <label>Student ID:</label>
+              <input type="text" inputmode="numeric" id="student_id" placeholder="input student id: 1234" required><br><br>
+              <label>Select Assignments: </label>
+              <select id="assignments" name="assignments" required>
+                <option>Select</option>
                 <option value="1">Lab 1</option>
                 <option value="2">Lab 2</option>
                 <option value="3">Homeowork 1</option>
                 <option value="4">Homeowork 2</option>
               </select>
-              <label for="html">Choose Entry</label><br>
-            <input type="radio" id="css" name="entry" value="May 2021">May 2021
-            <input type="radio" id="css" name="entry" value="August 2021">August 2021
-            <input type="radio" id="css" name="entry" value="November 2021">November 2021
-            <input type="checkbox" id="agree" name="agree" value="Boat">
-            <label for="agree"> I confirm that I am looking for my grades</label>
-              <button type='submit'>Get Grades</button>
+              <br><br>
+              <label for="html">Choose Entry</label>
+              <input type="radio" id="css" name="entry" value="May 2021" required>May 2021
+              <input type="radio" id="css" name="entry" value="August 2021">August 2021
+              <input type="radio" id="css" name="entry" value="November 2021">November 2021
+                <br><br>
+              <label> <input type="checkbox" id="agree" name="agree" value="true" required></label>
+                I confirm that I am looking for my own assignments  
+             <br>
+             <br>
+             <div class="button">
+                <input id="submit" type="submit" value="Get Grade!">
+             </div>   
+              
             </form>
+        </div>
       </body>
 </html>
