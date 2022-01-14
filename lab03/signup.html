@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <img src="images/nerd.png" alt="nerd" />
+    <form action="http://mumstudents.org/params.php" method="post">
+      <fieldset>
+        <legend>New User Signup:</legend>
+        <table>
+          <tr>
+            <td><b>Name:</b></td>
+            <td><input type="text" name="name" maxlength="16" /></td>
+          </tr>
+          <tr>
+            <td><b>Gender:</b></td>
+            <td>
+              <input type="radio" name="Gender" value="Male" />Male
+              <input type="radio" name="Gender" value="Female" checked />Female
+            </td>
+          </tr>
+          <tr>
+            <td><b>Age:</b></td>
+            <td><input type="text" size="6" maxlength="2" name="Age"/></td>
+          </tr>
+          <tr>
+            <td><b>Personality Type:</b></td>
+            <td>
+              <input type="text" size="8" maxlength="4" name="personality_type"/> (<a
+                href="humanmetrics.com/cgi-win/JTypes2.asp"
+                >Don't know your type?</a
+              >)
+            </td>
+          </tr>
+          <tr>
+            <td><b>Favorite OS:</b></td>
+            <td>
+              <select>
+                <option value="Windows" selected>Windows</option>
+                <option value="Mac OS X">Mac OS X</option>
+                <option value="Linux">Linux</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Seeking Age:</b></td>
+            <td><input type="text" size="6" maxlength="2" placeholder="min" name="min_age"/> To: <input type="text" size="6" maxlength="2" placeholder="max" name="max_age"/></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Sign Up" /></td>
+            <td></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <p>
+      This page is for single nerds to meet and date each other! Type in <br />
+      your peronal information and wait for the nerdly luv to begin! <br />
+      Thank you for using out site. <br /><br />
+      Results and page (C) Copyright NerLuv Inc.
+    </p>
+    <!-- Test-->
+    <a
+        href="http://validator.w3.org/check?uri=https://hriju.github.io/lab03/signup.html"
+        ><img
+          src="images/w3c-html.png"
+          alt="html validator"
+      /></a>
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhriju.github.io%2Flab3%2Fsignup.html&profile=css3svg&usermedium=all&warning=1&vextwarning="
+        ><img
+          src="images/w3c-css.png"
+          alt="css validator"
+      /></a>
+  </body>
+</html>
