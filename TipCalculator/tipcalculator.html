@@ -46,16 +46,15 @@
         /></a>
       </div>
 </body>
-
-</html>
 <script>
-function calulate() {
-    var getSubtotal = document.getElementById('subtotal');
-    var getTip = document.getElementById('tip');
-    var getTotal = document.getElementById('total');
-    var subtotal = getSubtotal.value;
-    var tip = getTip.value;
-    var total = Number(subtotal) + Number(subtotal * (tip/100));
-    getTotal.innerHTML = '$' + total;
-}
-</script>
+    function calulate() {
+        var getSubtotal = document.getElementById('subtotal');
+        var getTip = document.getElementById('tip');
+        var getTotal = document.getElementById('total');
+        var subtotal = getSubtotal.value;
+        var tip = getTip.value;
+        var total = Number(subtotal) + Number(subtotal * (tip/100));
+        getTotal.innerHTML = '$' + total;
+    }
+    </script>
+</html>
