@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+  </head>
+  <body>
+      <h2 > Lab6- JavaScript Timer Excercise </h2>
+    <div >
+      <h3>1.What is the difference between the following 2 statements?
+        setTimeout(booyah, 2000);
+        setTimeout(booyah(), 2000);
+        </h3>
+        
+      <p>
+        Ans:we should not use () when passing the function name in the setTimeout. so the second one wrong.<br>
+        For example var booyah= function(){ alert("Hello");}
+        setTimeout(booyah, 2000); is actually working as below 
+        setTimeout(function(){ alert("Hello");}, 2000);
+        setTimeout(booyah(), 2000); this is a syntax error .
+        anonymous function to be passed inside setTimeout. normal funciton should not be passed setTimeout.
+                 
+      </p>
+      
+    </div>
+
+    <div class="next_course">
+      <h3>2.	What do the following 2 alerts display (answer without running the code)?
+        var myfunc = function(a, x) {
+        return a * x;
+        };
+        var x = myfunc(2, 3);
+        var y = myfunc;
+        alert(x);
+        alert(y(2,3));
+        </h3>
+      <p> Ans: Both will display 6. 
+        
+        </p>
+       
+    </div>
+
+    <div class="fav_movies">
+      <h3>3.Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2
+           seconds that says “BOOYAH!”
+        setTimeout(booyah1, 2000); setTimeout(booyah2(), 2000);
+        </h3>
+       <code>
+        function booyah1(){<br>
+          alert("BOOYAH");<br>
+          }<br>
+          function booyah2(){<br>
+          alert("BOOYAH");<br>
+          }<br>
+          setTimeout(booyah1, 2000);<br>
+          setTimeout(function(){booyah2();} , 2000);<br>
+      </code>
+          
+        
+        
+      
+    </div>
+
+    <div class="moods">
+      <h3>4.	What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</h3>
+      <p>
+        Ans:
+           Is a way to write  javascript to separate document content and script content. If JavaScript features are partially or 
+           fully absent in a user's web browser, 
+           then the user notices as little as possible any lack of the web page's JavaScript functionality.
+           This approach is useful in so many ways as it makes
+           our code less error prone, easy to update and to debug.
+           </p>
+     <p>
+      Practical example is we can write three separate file for HTML , CSS  and  behavior page(JavaScript) then it will be called 
+      Unobtrusive way of Javascript code writing.
+      </p>
+
+    </div>
+
+    <br>
+  </body>
+</html>
