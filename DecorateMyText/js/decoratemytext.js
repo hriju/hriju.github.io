@@ -24,3 +24,10 @@ function changecolor()
       
   }
 }
+
+function replaceWithMalkovitch(){
+    var textarea=document.getElementById("textval");
+    if(textarea.value.length >= 5){
+        textarea.value="Malkovich";
+    }
+}
