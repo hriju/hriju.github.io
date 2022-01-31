@@ -67,7 +67,7 @@ function aniChange(){
     var animation=document.getElementById("Animation");
     var box=document.getElementById("box");
     box.value=ANIMATIONS[animation.value];
-    start.disabled="false";
+    //start.disabled="false";
 }
 function sizeChange(){
     var size=document.getElementById("size");
